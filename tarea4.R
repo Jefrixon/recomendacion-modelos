@@ -74,12 +74,13 @@ datasetRobotsOut$isRobot<-NULL
 dataTimeOrderHigher <- datasetRobotsOut[order(-datasetRobotsOut$duracion),]
 # Obtenemos los 10 primeros registros con la mayor duración
 dataTimeHigher10 <- dataTimeOrderHigher[1:10,]
+plot(dataTimeHigher10$duracion)
 
 # Ordenamos por duracion de menor a mayor
 dataTimeOrderLess <- datasetRobotsOut[order(datasetRobotsOut$duracion),]
 # Obtenemos los 10 primeros registros con la menor duración
 dataTimeLess10 <- dataTimeOrderLess[1:10,]
-
+plot(dataTimeLess10$duracion)
 
 
 
